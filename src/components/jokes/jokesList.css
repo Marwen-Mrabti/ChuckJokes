@@ -1,0 +1,89 @@
+.jokes-list {
+  /* background-color: #e0e0dd; */
+  /* min-height: 50vh; */
+  width: 95%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.jokes-list .category {
+  /* background-color: var(--color-yellow-metal); */
+  padding: 0.2rem 3rem;
+  border-radius: 3rem;
+  position: relative;
+}
+.jokes-list h2:after {
+  content: '';
+  height: 2px;
+  width: 90vw;
+  background: var(--color-yellow-metal);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.jokes {
+  /* background-color: lightblue; */
+  width: 98%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.btns {
+  width: 100%;
+  margin: 0rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: var(--color-yellow-metal);
+  border: 2px solid var(--color-yellow-metal);
+  padding: 0.2rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btn-primary:hover{
+  background-color: var(--color-yellow-metal);
+  color:white;
+}
+
+/*=========media queries=============*/
+
+/*=========media queries=============*/
+@media screen and (max-width: 850px) {
+  .jokes {
+    /* background-color: rgb(0, 255, 98); */
+
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .jokes {
+    /* background-color: yellow; */
+    width: 95%;
+    margin: auto;
+  }
+}

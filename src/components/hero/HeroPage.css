@@ -1,0 +1,71 @@
+.hero {
+  min-height: 40vh;
+  margin-top: 10vh;
+
+  background: url('../../assets/assets_Homework_Front-End_01/bitmap.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(36, 36, 36, 0.2);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-title {
+  /* background-color: rgb(88, 135, 156); */
+  width: 35rem;
+  min-height: 7.2rem;
+  overflow: auto;
+}
+.hero-title h1 {
+  font-size: 4.5rem;
+}
+.hero-title p {
+  /* padding: 0.1rem 0.5rem; */
+  font-size: 2.2rem;
+}
+
+.search-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50%;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.search-input {
+  /* background-color: rgb(109, 45, 45); */
+  background: transparent;
+  color: white;
+  width: 85%;
+  padding: 2rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+.search-icon {
+  font-size: 2rem;
+}
+
+.search-bar:active,
+.search-bar:focus-within {
+  background-color: white;
+  color: black;
+}
+.search-input:active,
+.search-input:focus-within {
+  color: black;
+}
+/*=========media queries=============*/
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 40vh;
+  }
+  .search-bar {
+    width: 90%;
+  }
+}

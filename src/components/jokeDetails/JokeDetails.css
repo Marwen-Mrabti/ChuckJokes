@@ -1,0 +1,92 @@
+.stats-container {
+  /* background-color: rgba(144, 238, 144, 0.445); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/*===========return to home btn =============*/
+
+.back-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 4rem;
+  background: black;
+  width: 90px;
+  height: 80px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 5s linear infinite;
+}
+
+.back-home img {
+  width: 70%;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+/*=============== joke card=============*/
+.joke-details {
+  /* background-color: lightblue; */
+  width: 95%;
+  margin: 2rem auto;
+  min-height: 60%;
+}
+.joke-details .joke-card {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.joke-details .joke-card:hover {
+  transform: none;
+  border: none;
+}
+/*===============like dislike btns=============*/
+.btns-opinion {
+  /* background-color: blue; */
+  width: 50vw;
+  height: 5rem;
+  margin-left: 3rem;
+  font-size: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.like-btn {
+  background-color: var(--color-green-600);
+  color: var(--color-white-two);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.like-btn:hover {
+  background-color: var(--color-green-400);
+}
+.dislike-btn {
+  background-color: var(--color-red-600);
+  color: var(--color-white-two);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.dislike-btn:hover {
+  background-color: var(--color-red-400);
+}

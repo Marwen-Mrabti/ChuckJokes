@@ -1,0 +1,67 @@
+.cta-container {
+  min-height: 30vh;
+  width: 80%;
+  margin: 3rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.cta-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  width: 15rem;
+  background-color: rgba(70, 68, 68, 0.5);
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: rgba(187, 188, 190, 0.651);
+  color: white;
+  border: 1px solid var(--color-yellow-metal);
+}
+/*============= btn color by category===============*/
+.category-bg {
+  background-color: var(--color-yellow-metal);
+  border-radius:2rem;
+}
+#animal {
+  background-color: lightgreen;
+}
+#career {
+  background-color: lightskyblue;
+}
+#celebrity {
+  background-color: orchid;
+}
+#dev {
+  background-color: orange;
+}
+#explicit {
+  background-color: orangered;
+}
+#music{
+  background-color: rgb(0, 110, 255);
+
+}
+#science{
+  background-color: rgb(94, 255, 0);
+}
+#sport{
+  background-color: rgb(238, 255, 0);
+
+}
+/*=========media queries=============*/
+@media screen and (max-width: 780px) {
+  .cta-container {
+    width: 95%;
+  }
+  .cta-btn {
+    width: 10rem;
+  }
+}
